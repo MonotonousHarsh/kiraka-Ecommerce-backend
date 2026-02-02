@@ -14,9 +14,9 @@ router = APIRouter(
 @router.get("/", response_model=List[ProductResponse])
 def get_products(
     skip: int = 0, 
-    limit: int = 12,  # Keep this low (12) for faster initial load
+    limit: int = 12,
     brand_id: Optional[int] = None,
-    category_id: Optional[int] = None,
+    category_id: Optional[str] = None,  # <--- CHANGED: Accept 'str' instead of 'int'
     db: Session = Depends(get_db)
 ):
     print("🚀 FAST FETCH: Starting optimized query...")
@@ -24,12 +24,19 @@ def get_products(
 
     if brand_id:
         query = query.filter(Product.brand_id == brand_id)
+    
     if category_id:
-        query = query.filter(Product.category_id == category_id)
+        # LOGIC: Check if input is a specific ID (number) or a Category Name (text)
+        if category_id.isdigit():
+            # It's an ID (e.g., category_id=1)
+            query = query.filter(Product.category_id == int(category_id))
+        else:
+            # It's a Name (e.g., category_id=bras)
+            # We join the Category table to find products with that category name
+            # .ilike makes it case-insensitive (Bras == bras)
+            query = query.join(Category).filter(Category.name.ilike(f"{category_id}"))
 
-    # --- SPEED FIX ---
-    # This "joinedload" instruction is what makes the query fast.
-    # It fetches all related data in a single SQL query.
+    # --- SPEED FIX (Kept from before) ---
     products = query.options(
         joinedload(Product.brand),
         joinedload(Product.category),
