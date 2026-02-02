@@ -46,7 +46,7 @@ def get_cart(db: Session = Depends(get_db), current_user: User = Depends(get_cur
         total_price += line_price
 
         # Logic to find the best image (Variant specific -> Product default -> Placeholder)
-        image_url = "https://placehold.co"
+        image_url = "https://placehold.co/600"
         if item.variant.images and len(item.variant.images) > 0:
             image_url = item.variant.images[0].image_url
         
