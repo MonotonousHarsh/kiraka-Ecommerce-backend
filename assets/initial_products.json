@@ -1,0 +1,455 @@
+[
+  {
+    "name": "Freya Fascinate Plunge Bra",
+    "brand_name": "Freya",
+    "category_name": "Bras",
+    "description": "Rising Star collection. Brimming with innovation and style. Embracing a darker palette with dramatic designs and a modern take on glamour.",
+    "shipping_info": "Ships in 24 hours",
+    "return_policy_type": "returnable",
+    "is_bundle": false,
+    "attributes": {
+      "wire": true,
+      "padding": "moulded",
+      "collection": "Rising Stars",
+      "style": "Plunge"
+    },
+    "variants": [
+      {
+        "sku": "AA403131-CHR",
+        "color": "Cherry",
+        "size": "34D",
+        "price": 3600.00,
+        "initial_stock_warehouse": 25,
+        "initial_stock_gurgaon": 5,
+        "images": [
+          { "image_url": "backend/data/assets/products/freya/fascinate-cherry.png", "is_primary": true }
+        ]
+      },
+      {
+        "sku": "AA403131-BLK",
+        "color": "Black",
+        "size": "34D",
+        "price": 3600.00,
+        "initial_stock_warehouse": 30,
+        "initial_stock_gurgaon": 10,
+        "images": [
+          { "image_url": "backend/data/assets/fascinate-black.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Freya Loveland Plunge Bra",
+    "brand_name": "Freya",
+    "category_name": "Bras",
+    "description": "Fall in love with Loveland's new colour of the season, Bombshell Teal. Featuring an Art Deco inspired design complete with a satin bow and gemstone drop charm.",
+    "shipping_info": "Ships in 24 hours",
+    "return_policy_type": "returnable",
+    "is_bundle": false,
+    "attributes": {
+      "wire": true,
+      "padding": "none",
+      "material": "embroidery",
+      "style": "Plunge"
+    },
+    "variants": [
+      {
+        "sku": "AA401002-BEA",
+        "color": "Bombshell Teal",
+        "size": "32E",
+        "price": 3800.00,
+        "initial_stock_warehouse": 15,
+        "initial_stock_gurgaon": 5,
+        "images": [
+          { "image_url": "/assets/products/freya/loveland-teal.png", "is_primary": true },
+          { "image_url": "/assets/products/freya/loveland-teal-2.png", "is_primary": false}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Freya Spot-Light Plunge Bra",
+    "brand_name": "Freya",
+    "category_name": "Bras",
+    "description": "Take centre stage with Spot-Light. A cute sheer spot mesh design paired with a delicate lace trim. Features a low centre front for a beautiful plunging look.",
+    "attributes": {
+        "style": "Plunge",
+        "material": "mesh"
+    },
+    "variants": [
+      {
+        "sku": "AA403905-ASE",
+        "color": "Ash Rose",
+        "size": "34C",
+        "price": 3200.00,
+        "initial_stock_warehouse": 20,
+        "initial_stock_gurgaon": 8,
+        "images": [
+           { "image_url": "/assets/products/freya/spotlight-ashrose.png", "is_primary": true }
+        ]
+      },
+      {
+        "sku": "AA403905-BLK",
+        "color": "Black",
+        "size": "34C",
+        "price": 3200.00,
+        "initial_stock_warehouse": 20,
+        "initial_stock_gurgaon": 8,
+        "images": [
+           { "image_url": "/assets/products/freya/spotlight-black.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Freya Active Sonic Sports Bra",
+    "brand_name": "Freya",
+    "category_name": "Activewear",
+    "description": "High performance with breathable spacer fabric moulded cups. Wide curvature wire for a comfortable, supportive fit. Built-up padded straps.",
+    "return_policy_type": "returnable",
+    "attributes": {
+        "wire": true,
+        "support_level": "High Impact",
+        "style": "Sports Bra"
+    },
+    "variants": [
+      {
+        "sku": "AC4892-NUE",
+        "color": "Nude",
+        "size": "36E",
+        "price": 4500.00,
+        "initial_stock_warehouse": 50,
+        "initial_stock_gurgaon": 15,
+        "images": [
+           { "image_url": "/assets/products/freya/sonic-nude.png", "is_primary": true },
+           { "image_url": "/assets/products/freya/sonic-nude-2.png", "is_primary": false }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fantasie Fusion Full Cup Bra",
+    "brand_name": "Fantasie",
+    "category_name": "Bras",
+    "description": "A real easy to fit 'sleek and simple' bra. Fusion is all about comfort. Feather-light fabric, yet super-supportive.",
+    "attributes": {
+        "wire": true,
+        "style": "Full Cup",
+        "collection": "Most Loved"
+    },
+    "variants": [
+      {
+        "sku": "FL3091-EVN",
+        "color": "Evergreen",
+        "size": "36D",
+        "price": 3900.00,
+        "initial_stock_warehouse": 30,
+        "initial_stock_gurgaon": 10,
+        "images": [
+           { "image_url": "/assets/products/fantasie/fusion-evergreen.png", "is_primary": true }
+        ]
+      },
+       {
+        "sku": "FL3091-BLK",
+        "color": "Black",
+        "size": "36D",
+        "price": 3900.00,
+        "initial_stock_warehouse": 40,
+        "initial_stock_gurgaon": 12,
+        "images": [
+           { "image_url": "/assets/products/fantasie/fusion-black.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fantasie Illusion Side Support Bra",
+    "brand_name": "Fantasie",
+    "category_name": "Bras",
+    "description": "Discover the effortless comfort of Illusion. Adored for its soft-touch fabric and flat lace top cup design. Elasticated neck edge makes it suitable for all bust types.",
+    "attributes": {
+        "wire": true,
+        "style": "Side Support",
+        "material": "soft-touch"
+    },
+    "variants": [
+      {
+        "sku": "FL2982-RED",
+        "color": "Red",
+        "size": "34DD",
+        "price": 3750.00,
+        "initial_stock_warehouse": 20,
+        "initial_stock_gurgaon": 5,
+        "images": [
+           { "image_url": "/assets/products/fantasie/illusion-red.png", "is_primary": true }
+        ]
+      },
+      {
+        "sku": "FL2982-NAE",
+        "color": "Natural Beige",
+        "size": "34DD",
+        "price": 3750.00,
+        "initial_stock_warehouse": 30,
+        "initial_stock_gurgaon": 10,
+        "images": [
+           { "image_url": "/assets/products/fantasie/illusion-beige.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fantasie Smoothease Invisible Brief",
+    "brand_name": "Fantasie",
+    "category_name": "Panties",
+    "description": "Achieve a seamless finish under clothing. Super soft fabric for a second skin feel and stitch-free edge.",
+    "return_policy_type": "non_returnable",
+    "attributes": {
+        "style": "Full Brief",
+        "feature": "Seamless"
+    },
+    "variants": [
+      {
+        "sku": "FL2328-EVN",
+        "color": "Evergreen",
+        "size": "One Size",
+        "price": 1200.00,
+        "initial_stock_warehouse": 100,
+        "initial_stock_gurgaon": 30,
+        "images": [
+           { "image_url": "/assets/products/fantasie/smoothease-evergreen.png", "is_primary": true },
+           { "image_url": "/assets/products/fantasie/smoothease-evergreen-2.png", "is_primary": false },
+           { "image_url": "/assets/products/fantasie/smoothease-evergreen-3.png", "is_primary": false }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elomi Matilda Plunge Bra",
+    "brand_name": "Elomi",
+    "category_name": "Bras",
+    "description": "Unparalleled fit with striking styles. Featuring embroidery with soft metallic yarns. Low centre front gives plunge without push up.",
+    "attributes": {
+        "wire": true,
+        "style": "Plunge",
+        "feature": "Racerback conversion"
+    },
+    "variants": [
+      {
+        "sku": "EL8900-SUM",
+        "color": "Sugarplum",
+        "size": "38DD",
+        "price": 4200.00,
+        "initial_stock_warehouse": 15,
+        "initial_stock_gurgaon": 8,
+        "images": [
+           { "image_url": "/assets/products/elomi/matilda-sugarplum.png", "is_primary": true },
+           { "image_url": "/assets/products/elomi/matilda-sugarplum-1.png", "is_primary": false }
+        ]
+      },
+      {
+        "sku": "EL8900-BLK",
+        "color": "Black",
+        "size": "40E",
+        "price": 4200.00,
+        "initial_stock_warehouse": 25,
+        "initial_stock_gurgaon": 10,
+        "images": [
+           { "image_url": "/assets/products/elomi/matilda-black.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elomi Morgan Side Support Bra",
+    "brand_name": "Elomi",
+    "category_name": "Bras",
+    "description": "The perfect everyday bra. Featuring dusky pink flowers on a bitter chocolate leopard-skin backdrop. Powerful stretch lace top cup.",
+    "attributes": {
+        "wire": true,
+        "style": "Side Support",
+        "collection": "Dark Romance"
+    },
+    "variants": [
+      {
+        "sku": "EL4110-DAE",
+        "color": "Dark Romance",
+        "size": "38F",
+        "price": 4100.00,
+        "initial_stock_warehouse": 20,
+        "initial_stock_gurgaon": 5,
+        "images": [
+           { "image_url": "/assets/products/elomi/morgan-darkromance.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elomi Cate Full Cup Bra",
+    "brand_name": "Elomi",
+    "category_name": "Bras",
+    "description": "Tried and trusted, Cate is loved for its full coverage and all-day support. Sheer embroidered top cup features a stylish intersecting arc design.",
+    "attributes": {
+        "wire": true,
+        "style": "Full Cup",
+        "support": "Maximum"
+    },
+    "variants": [
+      {
+        "sku": "EL4030-DPE",
+        "color": "Deep Emerald",
+        "size": "42FF",
+        "price": 3950.00,
+        "initial_stock_warehouse": 18,
+        "initial_stock_gurgaon": 6,
+        "images": [
+           { "image_url": "/assets/products/elomi/cate-emerald.png", "is_primary": true }
+        ]
+      },
+      {
+        "sku": "EL4030-LAE",
+        "color": "Latte",
+        "size": "42FF",
+        "price": 3950.00,
+        "initial_stock_warehouse": 30,
+        "initial_stock_gurgaon": 10,
+        "images": [
+           { "image_url": "/assets/products/elomi/cate-latte.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elomi Lucie Plunge Bra",
+    "brand_name": "Elomi",
+    "category_name": "Bras",
+    "description": "Banded underwired plunge bra with three section printed cups. Midnight is a timeless blue tonal leopard print.",
+    "attributes": {
+        "wire": true,
+        "style": "Plunge",
+        "print": "Leopard"
+    },
+    "variants": [
+      {
+        "sku": "EL4490-MIH",
+        "color": "Midnight",
+        "size": "36G",
+        "price": 4300.00,
+        "initial_stock_warehouse": 12,
+        "initial_stock_gurgaon": 4,
+        "images": [
+           { "image_url": "/assets/products/elomi/lucie-midnight.png", "is_primary": true },
+           { "image_url": "/assets/products/elomi/lucie-midnight-2.png", "is_primary": false },
+           { "image_url": "/assets/products/elomi/lucie-midnight-3.png", "is_primary": false }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elomi Energise Sports Bra",
+    "brand_name": "Elomi",
+    "category_name": "Activewear",
+    "description": "Unique non-compression design offering bust separation. Moisture wicking properties to keep you cool.",
+    "attributes": {
+        "wire": true,
+        "style": "Sports Bra",
+        "impact": "High"
+    },
+    "variants": [
+      {
+        "sku": "EL8041-NAO",
+        "color": "Navy Geo",
+        "size": "38G",
+        "price": 4600.00,
+        "initial_stock_warehouse": 25,
+        "initial_stock_gurgaon": 8,
+        "images": [
+           { "image_url": "/assets/products/elomi/energise-navygeo.png", "is_primary": true },
+           { "image_url": "/assets/products/elomi/energise-navygeo-2.png", "is_primary": false }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fantasie Reflect Side Support Bra",
+    "brand_name": "Fantasie",
+    "category_name": "Bras",
+    "description": "Features a powerful stretch lace top cup for a rounded look. Returning in sophisticated Navy.",
+    "attributes": {
+        "wire": true,
+        "style": "Side Support",
+        "material": "lace"
+    },
+    "variants": [
+      {
+        "sku": "FL101801-NAY",
+        "color": "Navy",
+        "size": "34F",
+        "price": 3800.00,
+        "initial_stock_warehouse": 20,
+        "initial_stock_gurgaon": 5,
+        "images": [
+           { "image_url": "/assets/products/fantasie/reflect-navy.png", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Freya Offbeat Side Support Bra",
+    "brand_name": "Freya",
+    "category_name": "Bras",
+    "description": "Crafted from soft stretch lace paired with contrast colour straps. A Most Loved collection.",
+    "attributes": {
+        "wire": true,
+        "style": "Side Support",
+        "collection": "Most Loved"
+    },
+    "variants": [
+      {
+        "sku": "AA5451-ROP",
+        "color": "Rosehip",
+        "size": "32E",
+        "price": 3400.00,
+        "initial_stock_warehouse": 35,
+        "initial_stock_gurgaon": 10,
+        "images": [
+           { "image_url": "/assets/products/freya/offbeat-rosehip.jpg", "is_primary": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Freya Deco Moulded Plunge Bra",
+    "brand_name": "Freya",
+    "category_name": "Bras",
+    "description": "Freya's best-selling Deco collection. Seam free cups with low plunging neckline for a smooth finish.",
+    "attributes": {
+        "wire": true,
+        "padding": "moulded",
+        "style": "T-Shirt Bra"
+    },
+    "variants": [
+      {
+        "sku": "AA4234-NUE",
+        "color": "Nude",
+        "size": "34D",
+        "price": 3500.00,
+        "initial_stock_warehouse": 100,
+        "initial_stock_gurgaon": 20,
+        "images": [
+           { "image_url": "/assets/products/freya/sonic-nude.png", "is_primary": true }
+        ]
+      },
+      {
+        "sku": "AA4234-BLK",
+        "color": "Black",
+        "size": "34D",
+        "price": 3500.00,
+        "initial_stock_warehouse": 100,
+        "initial_stock_gurgaon": 20,
+        "images": [
+           { "image_url": "/assets/products/freya/spotlight-black.png", "is_primary": true }
+        ]
+      }
+    ]
+  }
+]
