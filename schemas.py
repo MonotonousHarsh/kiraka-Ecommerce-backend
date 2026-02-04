@@ -1,5 +1,5 @@
-from pydantic import BaseModel, EmailStr, Field, validator
-from typing import List, Optional, Dict, Any, Union
+from pydantic import BaseModel, EmailStr, Field, ConfigDict
+from typing import List, Optional, Dict, Any
 from uuid import UUID
 from datetime import datetime
 from enum import Enum
@@ -25,6 +25,62 @@ class ConsultationStatus(str, Enum):
     COMPLETED = "completed"
     CANCELLED = "cancelled"
 
+
+# --- 1. SHARED SCHEMAS ---
+class BrandSchema(BaseModel):
+    id: int
+    name: str
+    model_config = ConfigDict(from_attributes=True)
+
+class CategorySchema(BaseModel):
+    id: int
+    name: str
+    model_config = ConfigDict(from_attributes=True)
+
+class ImageSchema(BaseModel):
+    id: int
+    image_url: str
+    alt_text: Optional[str] = None
+    model_config = ConfigDict(from_attributes=True)
+
+# --- 2. VARIANT SCHEMA ---
+class VariantSchema(BaseModel):
+    id: UUID
+    sku: Optional[str] = None
+    color: Optional[str] = None
+    size: Optional[str] = None
+    price: float
+    total_stock_available: int  # Computed property from model
+    images: List[ImageSchema] = []
+    
+    model_config = ConfigDict(from_attributes=True)
+
+# --- 3. PRODUCT RESPONSE SCHEMA ---
+class ProductResponse(BaseModel):
+    id: UUID
+    name: str
+    description: Optional[str] = None
+    
+    # Linked Objects
+    brand: Optional[BrandSchema] = None
+    category: Optional[CategorySchema] = None
+    
+    # Phase 2 Features
+    sub_category: Optional[str] = None
+    is_wired: Optional[bool] = None
+    is_padded: Optional[bool] = None
+    material_feature: Optional[str] = None
+    pattern: Optional[str] = None
+    activity: Optional[str] = None
+    
+    # Stats
+    average_rating: float = 0.0
+    review_count: int = 0
+    
+    # Variants (The most important part)
+    variants: List[VariantSchema] = []
+
+    model_config = ConfigDict(from_attributes=True)
 
 
 
@@ -205,6 +261,17 @@ class ConsultationResponse(BaseModel):
 # 6. CART SYSTEM
 # ==========================================
 
+class CartItemSchema(BaseModel):
+    id: int
+    quantity: int
+    variant_id: UUID
+    # This nested schema is the KEY to fixing "Unknown Product"
+    variant: Optional[VariantSchema] = None
+    model_config = ConfigDict(from_attributes=True)
+
+
+
+
 class CartItemCreate(BaseModel):
     variant_id: UUID
     quantity: int = Field(default=1, gt=0)
@@ -230,6 +297,14 @@ class CartResponse(BaseModel):
     total_price: float = 0.0
     class Config:
         from_attributes = True
+
+
+class CartSchema(BaseModel):
+    id: UUID
+    user_id: UUID
+    items: List[CartItemSchema] = []
+
+    model_config = ConfigDict(from_attributes=True)
 
 # ==========================================
 # 7. ORDER SYSTEM

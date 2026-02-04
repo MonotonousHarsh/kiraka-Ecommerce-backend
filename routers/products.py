@@ -4,6 +4,7 @@ from typing import List, Optional
 from database import get_db
 from models import Product, ProductVariant, ProductImage, Category, Brand
 from schemas import ProductResponse, ProductDetailResponse
+import schemas
 
 
 router = APIRouter(
@@ -11,7 +12,7 @@ router = APIRouter(
     tags=["Products"]
 )
 
-@router.get("/", response_model=list) # simplified response model hint
+@router.get("/", response_model=list[schemas.ProductResponse]) # simplified response model hint
 def get_products(
     skip: int = 0,
     limit: int = 50,
@@ -63,7 +64,7 @@ def get_products(
 
     
 
-@router.get("/{product_id}", response_model=ProductDetailResponse)
+@router.get("/{product_id}", response_model=schemas.ProductResponse)
 def get_product_detail(product_id: str, db: Session = Depends(get_db)):
     # Same optimization for the detail view
     product = db.query(Product).options(
