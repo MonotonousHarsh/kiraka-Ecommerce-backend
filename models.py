@@ -74,6 +74,15 @@ class Product(Base):
     brand_id = Column(Integer, ForeignKey("brands.id"))
     category_id = Column(Integer, ForeignKey("categories.id"))
     
+    # --- NEW PHASE 2 CLASSIFICATIONS ---
+    sub_category = Column(String, index=True)  # Basic, Fashion, T-shirt, Sports
+    is_wired = Column(Boolean, default=True)   # Wired / Non-Wired
+    is_padded = Column(Boolean, default=True)  # Padded / Non-Padded
+    material_feature = Column(String)          # Lace, Smooth, Cotton
+    pattern = Column(String, default="Solid")  # Solid / Printed
+    activity = Column(String)                  # Daily, Party, Sports, Lounge
+    # -----------------------------------
+
     is_bundle = Column(Boolean, default=False)
     attributes = Column(JSON) 
     average_rating = Column(Float, default=0.0)
@@ -81,13 +90,15 @@ class Product(Base):
     shipping_info = Column(String, default="Standard Delivery (3-5 Days)")
     return_policy_type = Column(String, default="returnable")
     
-    # Relationships
     brand = relationship("Brand", back_populates="products")
     category = relationship("Category", back_populates="products")
     variants = relationship("ProductVariant", back_populates="product")
     reviews = relationship("Review", back_populates="product")
     bundle_links = relationship("BundleComponent", back_populates="parent_product", foreign_keys="BundleComponent.parent_product_id")
 
+
+
+    
     @property
     def brand_name(self):
         return self.brand.name if self.brand else None
